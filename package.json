@@ -1,0 +1,30 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "login system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amr El Mahdy",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+
+
+    "body-parser": "^1.18.3",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.16.4",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "^3.1.8",
+    "mongoose": "^5.3.3",
+    "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-http": "*",
+    "passport-local": "*"
+  }
+}
