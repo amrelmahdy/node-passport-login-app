@@ -7,6 +7,14 @@ router.get("/", redirectIfAuthenticated, function (req, res) {
 });
 
 
+
+router.get("/chat", redirectIfAuthenticated, function (req, res) {
+    res.render("chat", {layout: ""});
+});
+
+
+
+
 function redirectIfAuthenticated(req, res, next){
     if (!req.isAuthenticated()){
         req.flash("error_msg", "please login first");

@@ -14,13 +14,14 @@ var UserSchema = new Schema({
         type: String,
         index: true,
         unique: true,
+        lowercase: true
     },
     password: {
         type: String,
     },
     image: {
         type: String,
-        default: "default.png"
+        default: "avatar.png"
     }
 });
 
@@ -34,6 +35,16 @@ module.exports = User;
 
 
 
+module.exports.saveUser = function (newUser) {
+    bcryptjs.genSalt(10, function(err, salt) {
+        bcryptjs.hash(newUser.password, salt, function(err, hash) {
+            newUser.password = hash;
+            newUser.save();
+        });
+    });
+};
+
+
 module.exports.createUser = function (newUser, callback) {
     bcryptjs.genSalt(10, function(err, salt) {
         bcryptjs.hash(newUser.password, salt, function(err, hash) {
@@ -44,8 +55,8 @@ module.exports.createUser = function (newUser, callback) {
 };
 
 
-module.exports.getUserByUsername = function (username, callback) {
-    let query = { username: username };
+module.exports.getUserByEmail = function (email, callback) {
+    let query = { email: email };
     user = User.findOne(query, callback);
 };
 

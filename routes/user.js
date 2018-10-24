@@ -18,10 +18,10 @@ router.post("/add", [
 );
 
 
-// this authenticates using username and password
+// this authenticates using email and password
 passport.use(new LocalStrategy(
-    function (username, password, done) {
-        User.getUserByUsername(username, function (err, user) {
+    function (email, password, done) {
+        User.getUserByEmail(email, function (err, user) {
             if (err) throw err;
             if (!user) {
                 return done(null, false, {message: "Unknown User .."});

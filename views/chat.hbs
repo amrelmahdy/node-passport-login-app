@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/public/chat/css/chat.css">
+
+    </head>
+    <body>
+        <div id="mario-chat">
+            <h1 class="text-center">Test Chat</h1>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+
+
+            <input id="sender" style="display: none" value="{{#if user}} {{ user.name }} {{else}} 'Admin User' {{/if}}" type="text" >
+
+            <input id="message" placeholder="Write a message here" id="message" type="text" >
+            <button id="send">Send</button>
+        </div>
+
+    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/chat/js/chat.js"></script>
+
+</html>
