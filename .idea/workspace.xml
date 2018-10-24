@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="218bb47c-715f-4526-acd6-56742ae91171" name="Default Changelist" comment="" />
+    <list default="true" id="218bb47c-715f-4526-acd6-56742ae91171" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,7 +31,7 @@
           <entry key="css" value="3" />
           <entry key="handlebars" value="10" />
           <entry key="hbs" value="36" />
-          <entry key="js" value="19" />
+          <entry key="js" value="20" />
           <entry key="json" value="4" />
           <entry key="png" value="3" />
         </counts>
@@ -39,7 +42,7 @@
           <entry key="Handlebars/Mustache" value="46" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="19" />
+          <entry key="JavaScript" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -47,7 +50,7 @@
           <entry key="css" value="41" />
           <entry key="handlebars" value="367" />
           <entry key="hbs" value="1871" />
-          <entry key="js" value="5729" />
+          <entry key="js" value="5731" />
           <entry key="json" value="53" />
         </counts>
       </usages-collector>
@@ -56,18 +59,27 @@
           <entry key="CSS" value="41" />
           <entry key="Handlebars/Mustache" value="2238" />
           <entry key="JSON" value="53" />
-          <entry key="JavaScript" value="5729" />
+          <entry key="JavaScript" value="5731" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="118" column="3" lean-forward="true" selection-start-line="118" selection-start-column="3" selection-end-line="118" selection-end-column="3" />
+            <state relative-caret-position="-40">
+              <caret line="67" column="11" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -129,7 +141,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/chat/css/chat.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -166,6 +178,7 @@
       <find>Alex</find>
       <find>rou</find>
       <find>user</find>
+      <find>loc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,7 +215,6 @@
         <option value="$PROJECT_DIR$/helpers/routeHelper.js" />
         <option value="$PROJECT_DIR$/routes/api/user.js" />
         <option value="$PROJECT_DIR$/controllers/api/user.js" />
-        <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/layouts/chat.hbs" />
@@ -210,6 +222,7 @@
         <option value="$PROJECT_DIR$/views/chat.hbs" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/chat/js/chat.js" />
+        <option value="$PROJECT_DIR$/routes/user.js" />
       </list>
     </option>
   </component>
@@ -249,13 +262,7 @@
             <path>
               <item name="login" type="b2602c69:ProjectViewProjectNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="login" type="b2602c69:ProjectViewProjectNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -309,12 +316,12 @@
       <workItem from="1540128662779" duration="29000" />
       <workItem from="1540200276780" duration="8023000" />
       <workItem from="1540240375518" duration="9153000" />
-      <workItem from="1540303670908" duration="6742000" />
+      <workItem from="1540303670908" duration="7451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63101000" />
+    <option name="totallyTimeSpent" value="63810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1387" height="831" extended-state="0" />
@@ -468,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -534,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="118" column="3" lean-forward="true" selection-start-line="118" selection-start-column="3" selection-end-line="118" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/api/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -566,6 +559,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="67" column="11" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
         </state>
       </provider>
     </entry>
