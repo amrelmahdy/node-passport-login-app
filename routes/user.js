@@ -11,9 +11,7 @@ router.get("/", authController.usersList);
 
 router.get("/add", authController.create);
 
-router.post("/add", [
-        check('name').isLength({min: 1}).withMessage("Name Is Required"),
-    ],
+router.post("/add", [check('name').isLength({min: 1}).withMessage("Name Is Required")],
     authController.saveUser
 );
 
